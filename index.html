@@ -1,47 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Results summary component</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Hanken+Grotesk:wght@500;700;800&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | Results summary component</title>
+  </head>
+  <body>
+    <main>
+      <div class="results">
+        <div class="your-result">
+          <h2 class="heading">Your Result</h2>
 
-  Your Result
-  76
-  of 100
+          <div class="result-score">
+            <data value="76" class="current">76</data>
+            <span class="score-of"> of 100 </span>
+          </div>
 
-  Great
-  You scored higher than 65% of the people who have taken these tests.
-  
-  Summary
+          <div class="verdict-details">
+            <strong class="verdict">Great</strong>
+            <p>
+              You scored higher than 65% of the people who have taken these
+              tests.
+            </p>
+          </div>
+        </div>
+        <div class="results-summary">
+          <h1 class="heading">Summary</h1>
 
-  Reaction
-  80 / 100
+          <div class="result-chips">
+            <p class="result-chip reaction">
+              <span class="label">
+                <img src="./assets/images/icon-reaction.svg" alt="" />
+                Reaction
+              </span>
+              <span class="value"><strong>80</strong> / 100</span>
+            </p>
+            <p class="result-chip memory">
+              <span class="label">
+                <img src="./assets/images/icon-memory.svg" alt="" />
+                Memory
+              </span>
+              <span class="value"><strong>92</strong> / 100 </span>
+            </p>
+            <p class="result-chip verbal">
+              <span class="label">
+                <img src="./assets/images/icon-verbal.svg" alt="" />
+                Verbal
+              </span>
+              <span class="value"><strong>61</strong> / 100</span>
+            </p>
+            <p class="result-chip visual">
+              <span class="label">
+                <img src="./assets/images/icon-visual.svg" alt="" />
+                Visual
+              </span>
+              <span class="value"><strong>72</strong> / 100</span>
+            </p>
+          </div>
 
-  Memory
-  92 / 100
-
-  Verbal
-  61 / 100
-
-  Visual
-  72 / 100
-
-  Continue
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+          <button type="button">Continue</button>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>
