@@ -177,12 +177,11 @@ p {
   color: white;
   font-size: 18px;
   font-weight: 500;
-  transition: all 0.35s;
 }
 
 .results-summary button:hover {
   cursor: pointer;
-  background-color: var(--dark-gray-blue-transparent);
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
 }
 
 /* Responsiveness */
